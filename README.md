@@ -1,4 +1,4 @@
-# Parametric_Universal_Buck_Converter_and_Small_Electronics_Case
+# Parametric Universal Buck Converter and Small Electronics Case
  
 This OpenSCAD script will generate a 3d printable enclosure for small electronics such as buck converters, relay boards, and more.  Nearly all aspects of the design are parametric in nature, allowing a great deal of flexibility and control over the output.  Optional features include:
 
