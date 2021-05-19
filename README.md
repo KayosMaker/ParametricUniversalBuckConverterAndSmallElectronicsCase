@@ -19,7 +19,7 @@ This OpenSCAD script will generate a 3d printable enclosure for small electronic
 -optional screw closure for the two halves.  the snap fit works well but some applications require a more secure hold.  you can choose between 2 hole closure, 4 hole closure, or friction fit only.
 
 
-##Getting Started
+## Getting Started
 
 To use this file you'll need OpenSCAD: https://www.openscad.org
 
@@ -31,5 +31,5 @@ There are a lot of options in this file, particularly when it comes to mounting 
 This file has a lot of work to go to be where I want it.  For now it works and is easy to fit to any little board.  
 
 #### Credit
-Thanks to the original author of the basic enclosure, available at: https://www.thingiverse.com/thing:1625233
+Thanks to gtcdma, the original author of the basic enclosure, available at: https://www.thingiverse.com/thing:1625233
 All modifications from the original were done by me, Kayos Maker.
