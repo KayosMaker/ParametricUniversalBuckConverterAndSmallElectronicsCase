@@ -1,33 +1,47 @@
-/*Universal Small Electronics Mounting Case
-*------------------------------------
-*remixed from the following file on thingiverse, by gtcdma : https://www.thingiverse.com/thing:1625233
-*remix by Kayos Maker
+/*
+* Universal Small Electronics Mounting Case
+* ======================================================================================================
+* remixed from the following file on thingiverse, by gtcdma : https://www.thingiverse.com/thing:1625233
+* remix by Kayos Maker
+* ======================================================================================================
 *
+*       Features
+* - compatible with 2 and 4 hole PCBs
+* - mount PCB on plastic posts or with screws
+* - configurable optional cooling slots
+* - internal zip tie points for strain relief which print on almost any printer with no support(bridging enabled in slicer)
+* - configurable single or dual mounting tabs
+* - optional 2 or 4 hole screw closure(set up for m3 screws but can be altered with care)
 *
+*   
+*       USAGE NOTES
+*   Generally speaking, read all the comments.  Each variable is commented in order to clarify it's purpose in the overall design.  Variables are grouped into sections according to relevance.   
 *
-*   FEATURES
-*  -compatible with 2 and 4 hole PCBs
-*  -mount PCB on plastic posts or with screws
-*  -configurable optional cooling slots
-*  -internal zip tie points for strain relief
-*  -configurable single or dual mounting tabs
-*  -optional 2 or 4 hole screw closure(set up for m3 screws but can be altered with care)
-
-*   Current Version V2.11   5/27/2021
-
+* ======================================================================================================
+*
+*       Current Version v2.12   5/29/2021
+*
 *       Changelog
-    -v2.11  -remove trimpot hole(pita to measure accurately - remove the lid for adjustments)
-            -reformat variables section for customizer (its harder for me to read but it should be easier for non-openscadders to use now)
-    -v2.10  -add optional cooling slots to lid  (4-16-2021)
-            -add optional screwholes to mounting options
-            -add options for 4 hole pcbs
-            -add optional 2 or 4 hole case closure, in addition to original friction fit
-            -add mounting ear/s option
-    -v2.00  -reformat for my editting preferences, will fix later for customizer
-*   -v2     -establish new version for my changes 
-*   -v1.0   -no version info from orig file or contact info for author.  we'll call it 1.0
+* v2.12 - add feature wishlist to keep myself motivated, and remind myself what to work on after a long absence (5-29-2021)
+* v2.11 - remove trimpot hole(pita to measure accurately - remove the lid for adjustments)
+*       - reformat variables section for customizer (its harder for me to read but it should be easier for non-openscadders to use now)
+* v2.10 - add optional cooling slots to lid  (4-16-2021)
+*       - add optional screwholes to mounting options
+*       - add options for 4 hole pcbs
+*       - add optional 2 or 4 hole case closure, in addition to original friction fit
+*       - add mounting ear/s option
+* v2.00 - reformat for my editting preferences, will fix later for customizer
+* v2    - establish new version for my changes 
+* v1    - no version info from orig file or contact info for author.  we'll call it 1.0
+*
+*        Feature Wishlist / To-Do list
+* - asymmetrical pcb options
+* - chamfer/radius option
+* - rework language in comments to more clearly describe how features work
+* - add sensible limits and easy to undersand options for customizer based use of the file
+* - add option to render only one or both components, for ease of creating separate stl's
 */
-//-----------------------------------------------------------------------------------------------------------
+// ======================================================================================================
 //   USER DEFINABLE VARIABLES   
 
 /*[PRIMARY PCB DIMENSIONS (in mm)]*/
@@ -35,10 +49,10 @@
 //PCB Length - wireholes align with this axis, so if you want the holes on the long sides of your enclosure, swap your x and y values for everything
 pcb_x = 54;
 
-//PCB Width - add some padding if you dont wish it to be a close fit side to side
+//PCB Width - add some padding if you dont wish it to be a snug fit side to side
 pcb_y = 24.5; 
 
-//PCB Height - measure from the pcb underside to the highest component - use the variable Standoff Height below to compensate for solder and throughhole tails
+//PCB Height - measure from the pcb underside to the top of the highest component
 pcb_ht = 17; 
 
 //Mounting Holes X - distance between mounting hole centers, on X axis
